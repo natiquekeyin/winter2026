@@ -158,9 +158,111 @@
 // console.log(x++); //3  int:4
 // console.log(x); //4     int:4
 
-let z = 10;
-console.log(z--); //10
-console.log(--z); //8
-console.log(z--); // 8
-console.log(z); //7
-console.log(--z); //6
+// let z = 10;
+// console.log(z--); //10
+// console.log(--z); //8
+// console.log(z--); // 8
+// console.log(z); //7
+// console.log(--z); //6
+
+// let age = 18;
+// // Coercion: Converting the type from either side and then comparing...
+// // === .. is called "Strict Equality operator", used for saving from coercion...
+// // N.B: ALWASY USE === IN JS, TO AVOID COERCSION.....
+// if (age === "18") {
+//   console.log("YES");
+// } else {
+//   console.log("NO");
+// }
+
+// Unary Operators: An operator that requires ONLY one operand! x++, --x, !x,
+
+// Binary Operators: Opertors that require 2 operands ..  a+ ,NOT.. 5+5, 2+x,
+
+// Ternary operator(conditional operator): Operator that requires 3 operands!
+//  ? :
+// Syntax:
+// operand1 ? operand2 : operand3
+// condition ? value_if_true: value_if_false
+
+// let age = 13;
+// age > 15 ? console.log("Welcome") : console.log("Not allowed");
+
+// let x = 10;
+// let message;
+
+// message =
+//   x < 10 ? "Number is less than 10" : "Number is greater than or equal to 10";
+
+// if (x < 10) {
+//   message = "Numbe is less than 10";
+// } else {
+//   message = "Number is greater then or equal to 10";
+// }
+// console.log(message);
+
+// Strings can be " ", ' ' , ` `
+
+// let name = "Alice";
+// let age = 20;
+// // console.log("Welcome " + name + " your age is " + age);
+// console.log(`Welcome ${name} your age is ${age}`); //f trings in python...back ticks...
+// // whe we use backticks ` ` , the string is called template literals...
+
+// what is an Expression?
+//  An expression is a statement that evalues to a value...
+// let y = 5;
+
+// let x = y + 10; //equation when there is an equal sign..
+
+// x will x have a value after execution?? "x" is one expression
+
+// y+10... does it also a value? y+10 is another expressions
+
+// let age = 18;
+// // age > 15; // Is this an expression
+// // Yes this is an expression.... "false"
+// console.log(age > 15);
+
+// if(x<10){
+
+// }
+
+// Sequential Flow
+// console.log("hello");
+// console.log("world");
+// console.log("something");
+// console.log("keyin college");
+
+// COnditional:
+
+// let age = 10;
+// console.log("Hello to my  program");
+// if (age > 18) {
+//   console.log("Welcome to the classs");
+// } else {
+//   console.log("you are underage");
+// }
+
+// Looping:
+//  for in in range(1,10): PYTHON
+
+// for(initialization; condition; increment/decrement) { ...body of the loop   }
+
+// for (let i = 0; i < 3; i++) {
+//   console.log("Hello", i);
+// }
+
+// Step1: initialization occurs: i = 0;
+// Step2: Condition is tested 0<3 ? T Or F?
+// Step3: If condition is true .. execute the body of the loop
+// Step4: After execution, goto inc/dec..
+// Step5: Condition is tested again...1 <3 ? T/F?, if Condition is true..goto Step3
+// Step6: When condition is false, exit the loop...
+
+for (let i = 1; i <= 10; i++) {
+  console.log(i);
+}
+
+// 1 2 3...10...
+// 10 9 8 7 6 5 .. 1???
