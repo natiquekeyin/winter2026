@@ -260,9 +260,25 @@
 // Step5: Condition is tested again...1 <3 ? T/F?, if Condition is true..goto Step3
 // Step6: When condition is false, exit the loop...
 
-for (let i = 1; i <= 10; i++) {
-  console.log(i);
-}
+// for (let i = 1; i <= 10; i++) {
+//   console.log(i);
+// }
 
 // 1 2 3...10...
-// 10 9 8 7 6 5 .. 1???
+// // 10 9 8 7 6 5 .. 1???
+
+// for (let i = 10; i >= 1; i--) {
+//   console.log(i);
+// }
+
+function abc() {
+  console.log("Keyin College");
+  console.log("End of function");
+}
+
+console.log("I am starting of the program");
+console.log("I am second line");
+abc();
+console.log("I am after first call of abc");
+abc();
+console.log("I am after second call abc");
