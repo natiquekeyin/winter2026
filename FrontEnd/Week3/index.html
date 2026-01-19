@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Special Topics in HTML</title>
+  </head>
+  <body>
+    <h1>Block level & Inline level elements</h1>
+
+    <h2>Block Level Elements</h2>
+    <p>
+      The elements that make a block around them. They don't allow anything to
+      be placed beside them.
+    </p>
+
+    <h2>Inline Level Elements</h2>
+    <p>
+      The elements that do not make a block around them are called inline
+      elements. For example: <a href="https://www.google.com">Google</a>
+      <a href="https://www.twitter.com">Twitter</a>
+    </p>
+
+    <h2>Generic Block Level Container</h2>
+    &lt;div&gt; &lt;/div&gt; this a generic block level element
+    <div>This is a div element</div>
+
+    <h2>Generic Inline Container</h2>
+    &lt;span&gt; &lt;/span&gt; .. span actually runs with the content and does a
+    not <span style="font-size: 30px; color: blue">p</span>roduce a new line
+
+    <h2>Tables in HTML</h2>
+    &lt;table&gt; &lt;/table&gt; is used to develop tables..
+    <table>
+      <tr>
+        <td>A</td>
+        <td>B</td>
+        <td>C</td>
+      </tr>
+    </table>
+
+    &lt;thead&gt; &lt;tbody&gt; &lt;tfoot&gt;
+
+    <!-- <table>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Reg. no.</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Ali</td>
+          <td>1234</td>
+        </tr>
+      </tbody>
+    </table> -->
+    <table border="1">
+      <tr>
+        <td colspan="3">A</td>
+      </tr>
+      <tr>
+        <td>B</td>
+        <td>C</td>
+        <td>D</td>
+      </tr>
+    </table>
+
+    <table border="1">
+      <tr>
+        <td rowspan="3">A</td>
+        <td colspan="2">B</td>
+      </tr>
+      <tr>
+        <td>C</td>
+        <td>D</td>
+      </tr>
+      <tr>
+        <td>E</td>
+        <td>F</td>
+      </tr>
+    </table>
+  </body>
+</html>
