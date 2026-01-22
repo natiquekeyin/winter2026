@@ -1,0 +1,25 @@
+/* div {
+  border: 1px solid green;
+  margin-bottom: 10px;
+}
+
+.drop {
+  color: red;
+  font-size: 50px;
+  float: left;
+} */
+
+html,
+body {
+  font-size: 10px;
+  /* default font size on web page is 16px Remember this */
+}
+
+div {
+  /* font-size: 1em; 16 px */
+  font-size: 2rem;
+}
+
+/* p {
+  font-size: 2rem;
+  /* 64 */
