@@ -1,25 +1,29 @@
-/* div {
-  border: 1px solid green;
-  margin-bottom: 10px;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+/* h1 {
+  border: 1px solid red;
+  padding: 10px;
+  width: 400px;
 }
 
-.drop {
-  color: red;
-  font-size: 50px;
-  float: left;
+h2 {
+  border: 1px solid green;
+  padding: 10px;
+  width: 400px;
 } */
 
-html,
-body {
-  font-size: 10px;
-  /* default font size on web page is 16px Remember this */
+#s1 {
+  border: 15px solid rgb(255, 0, 0);
+  width: 400px;
+  padding: 13px;
+  height: 70px;
 }
 
-div {
-  /* font-size: 1em; 16 px */
-  font-size: 2rem;
+#s2 {
+  border: 1px solid rgb(0, 0, 0);
+  width: 400px;
+  height: 70px;
 }
-
-/* p {
-  font-size: 2rem;
-  /* 64 */

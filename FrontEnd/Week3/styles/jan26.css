@@ -1,0 +1,27 @@
+main {
+  display: flex;
+  justify-content: space-between;
+}
+
+section {
+  border: 1px solid green;
+}
+
+#s1 {
+  flex: 1;
+}
+#s2 {
+  flex: 1;
+}
+#s3 {
+  flex: 1;
+}
+
+ul {
+  display: flex;
+  justify-content: space-between;
+}
+
+li {
+  list-style: none;
+}
