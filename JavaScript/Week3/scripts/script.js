@@ -127,8 +127,8 @@
 
 // f();
 
-xyz();
+// xyz();
 
-function xyz() {
-  console.log("hello from XYZ");
-}
+// function xyz() {
+//   console.log("hello from XYZ");
+// }
