@@ -1,0 +1,53 @@
+/* #div-1 {
+  display: block;
+  background-color: rgb(113, 160, 201);
+  height: 80px;
+  width: 200px;
+}
+
+#span-1 {
+  display: inline-block;
+  background-color: aquamarine;
+  height: 90px;
+  width: 80px;
+}
+
+#span-2 {
+  background-color: bisque;
+}
+
+#div-2 {
+  display: inline;
+  background-color: blueviolet;
+}
+
+img {
+  width: 150px;
+  height: 150px;
+} */
+
+.box {
+  width: 400px;
+  height: 400px;
+  border: 5px solid black;
+  margin: 20px auto;
+  position: relative;
+}
+
+.item1,
+.item2 {
+  width: 200px;
+  height: 200px;
+}
+
+.item1 {
+  background-color: brown;
+  position: sticky;
+  width: 900px;
+  height: 90px;
+  left: 20px;
+  top: 0px;
+}
+.item2 {
+  background-color: rgb(214, 170, 112);
+}
