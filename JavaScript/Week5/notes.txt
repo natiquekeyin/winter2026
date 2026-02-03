@@ -1,0 +1,31 @@
+Regular Expressions!
+    Used for text searching, text replacing, validations!
+
+in JS:
+
+let re = /abc/;
+let re2 = new RegExp("abc");
+
+
+. means literally any character!
+\. literal dot.the period
+[]represents a set either of them [se] either s or either e
+\d means any digit from 0 - 9[\D means any thing BUT a digit]
+\w means a-z A-Z _ (collection of these is repreented as \w)[\W means anything but a word]
+\s to find a space
+? is an optional character!
+* 0 or more occurences of any character...
++ 1 or more occurences of any character...
+
+{5} exactly 5 times this letter should appear
+{5,7} from 5 to 7...
+{3,} 3 or more
+
+\(?\d{3}\)?[\s\-]*\d{3}[\s\-]*\d{4}
+
+
+(\w+)@(\w+)\.(\w+)
+
+
+test() in JS tests a string against a regular expression...
+re.test("String"); SYNTAX
