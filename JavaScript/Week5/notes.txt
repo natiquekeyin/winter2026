@@ -29,3 +29,11 @@ let re2 = new RegExp("abc");
 
 test() in JS tests a string against a regular expression...
 re.test("String"); SYNTAX
+
+
+
+let nums=[1,2,3];
+for(let i of nums)
+{
+console.log(i);
+}
