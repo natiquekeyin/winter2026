@@ -5,8 +5,9 @@ cat.addEventListener("click", function (evt) {
 });
 
 let body = document.body;
-body.addEventListener("click", function () {
-  console.log("Body clicked");
+body.addEventListener("mousemove", function (evt) {
+  document.querySelector("#xPos").innerText = evt.clientX;
+  document.querySelector("#yPos").innerText = evt.clientY;
 });
 
 let btn = document.querySelector("#btn");
@@ -22,3 +23,29 @@ function nextCatImageUrl() {
   }
   return cats[newCatUrl++];
 }
+
+let btn1 = document.querySelector("#btn1");
+btn1.addEventListener("click", function () {
+  btn1.remove();
+  let ol = document.createElement("ol");
+  let i = 1;
+  cats.forEach((url) => {
+    let li = document.createElement("li");
+    // li.innerText = url;
+    li.innerHTML = `<a href="${url}">URL ${i++}</a>`;
+    ol.appendChild(li);
+  });
+
+  document.querySelector("#output").appendChild(ol);
+});
+
+// timer functions
+
+setTimeout(function () {
+  // cat.src = nextCatImageUrl();
+  cat.remove();
+}, 3000);
+
+setInterval(function () {
+  cat.src = nextCatImageUrl();
+}, 1000);
