@@ -51,11 +51,36 @@ function splitIntoRows(s) {
   return s.split(/\r?\n/);
 }
 
+function extractAreaCode(phoneNumber) {
+  let matches = phoneNumber.match(/(\(?\d{3}\)?)[\s\-]*\d{3}[\s\-]*\d{4}/);
+  if (matches) {
+    return matches[1];
+  }
+  return phoneNumber;
+}
+
+function normalizeHeight(height) {
+  if (height.endsWith("inches")) {
+    return height;
+  }
+
+  // Get the height in cm as  Number
+  let cm = parseFloat(height);
+  let inches = cm * 0.39;
+  // xx inches
+  return `${Math.round(inches, 0)} inches`;
+}
 function rowToFields(row) {
   let fields = row.split(/\s*,\s*/);
   // Remove extra space from name
   fields[1] = fields[1].replace(/\s+/, " ");
-  return fields;
+
+  // Extract area code from 555-12344555 or 1233333333
+  fields[2] = extractAreaCode(fields[2]);
+
+  // Normalize height
+  fields[3] = normalizeHeight(fields[3]);
+  return fields.join(",");
 }
 
 function processCSV(csv) {
@@ -80,11 +105,12 @@ function processCSV(csv) {
   // 2.3 By using map function
 
   let data = rows.map((row) => rowToFields(row));
-  console.log(data);
+
+  return data.join("\n");
   //   return csv;
 }
 
-// console.log(csvData);
-// console.log("-------------------------");
+console.log(csvData);
+console.log("-------------------------");
 let processed = processCSV(csvData);
-// console.log(processed);
+console.log(processed);
