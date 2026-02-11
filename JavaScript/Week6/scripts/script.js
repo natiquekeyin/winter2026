@@ -15,7 +15,7 @@ function getPosts() {
     posts.forEach(function (post) {
       console.log(post.title);
     });
-  }, 3000);
+  }, 1000);
 }
 
 createPost({ title: "post4", author: "author4", body: "body of post 4" }); //3 seconds in execution

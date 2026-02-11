@@ -4,3 +4,5 @@ Asynchronous Programming
  1.Callback functions
  2.Promises
  3.Async/Await
+
+ 1. XMLHttpRequest:
