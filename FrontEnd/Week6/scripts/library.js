@@ -46,4 +46,23 @@ window.addEventListener("DOMContentLoaded", function () {
       document.querySelector("#box").remove();
     }, 2000);
   }
+
+  this.document.querySelector("#area").addEventListener("click", handleDelete);
+
+  function handleDelete(evt) {
+    deleteBook(evt.target);
+  }
+
+  function deleteBook(elemToDelete) {
+    if (elemToDelete.className === "delete") {
+      elemToDelete.parentElement.remove();
+      showAlert("Book successfully removed", "success");
+    } else {
+      showAlert("Wrong area.. click on X", "error");
+    }
+  }
 });
+
+// Next we will convert this code into OOP code...
+// Also, we will make the books added permanently to the browser memory and they are alwasy available.
+// Try practicing the same concepts with other such thype of projects..like ToDo, student registration,any type of registration...
