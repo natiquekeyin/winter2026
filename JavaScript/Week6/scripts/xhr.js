@@ -93,7 +93,7 @@ btn4.addEventListener("click", function () {
 
       users.forEach((user) => {
         document.querySelector("#output").innerHTML +=
-          `<div class="profile"><h4>${user.login}</h4> <img src="${user.avatar_url}" alt="Pic" width="100"/>
+          `<div class="profile"><h4>${user.login}</h4> <img src="${user.avatar_url}" alt="Pic" width="100" class="profilePic"/>
           <a href = "${user.html_url}">More...</a></div>`;
       });
     }

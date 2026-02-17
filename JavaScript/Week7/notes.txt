@@ -1,0 +1,11 @@
+Fetch API - another way of doing asynchronous programming in JS
+    Fetch API uses "Promises"!
+
+What is a promise?
+    In ES5/ES6 JS, promise is just like a real world promise:
+    We make promises! Either we fulfil them OR we do not fulfil them!
+    
+    If a promise is fulfilled in JS, it means it is "resolve()"
+    If a promise is NOT fulfilled in JS, it means it is "reject()"
+
+    In async progrmaming, we actually wait for some promises (to be either resolved OR rejected before we continute our execution of next codes)

@@ -6,3 +6,4 @@ Asynchronous Programming
  3.Async/Await
 
  1. XMLHttpRequest:
+ 2. Fetch API
