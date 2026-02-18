@@ -9,3 +9,5 @@ What is a promise?
     If a promise is NOT fulfilled in JS, it means it is "reject()"
 
     In async progrmaming, we actually wait for some promises (to be either resolved OR rejected before we continute our execution of next codes)
+
+fetch API is more widely used for asynchronous communication...
