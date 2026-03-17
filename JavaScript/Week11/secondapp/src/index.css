@@ -113,3 +113,19 @@ code {
 hr {
   width: 100%;
 }
+
+button {
+  width: 100px;
+  margin: 20px auto;
+  border: none;
+  border-radius: 5px;
+  height: 35px;
+  color: white;
+  cursor: pointer;
+}
+
+header {
+  border: 1px solid green;
+  width: 500px;
+  margin: 20px auto;
+}
