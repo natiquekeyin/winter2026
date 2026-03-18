@@ -1,0 +1,14 @@
+In this temp folder, we will only create those components that are not directly part of our tasktracker application. 
+
+Rather we will discuss different topics and practice them inside this temp folder components...
+
+State in React:
+
+In React.js, state is a built-in feature that allows components to store, manage, and track data that changes over time. (AI)
+
+
+
+[variables to store different values for a particular component]
+
+
+This component-specific memory is essential for building dynamic and interactive user interfaces because when the state changes, React automatically re-renders the component to reflect the new data. 
