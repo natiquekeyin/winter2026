@@ -1,7 +1,7 @@
 import { useState } from "react";
 
 const Temp1 = () => {
-  let [num, setNum] = useState(0);
+  let [num, setNum] = useState(0); // state variables CANNOT be updated like normal variables. Rather we need a special function to update them!.. setNum is that special function that can ONLY be used to update the "num". num=num+1 NOT TRUE FOR STATE VARIABLE. For state vaiables like "num" we need  a special function (LIKE setNum)
   let [name, setName] = useState("Alan Smith");
   let [color, setColor] = useState("red");
 
@@ -14,24 +14,45 @@ const Temp1 = () => {
       <button
         onClick={() => {
           setNum(num + 1);
-          setName("Bob Woolmer");
+          setName("Bob Smith");
         }}
       >
         Inrement
-      </button> */}
-      <h1>My favorite color is {color}!</h1>
-      <button type="button" onClick={() => setColor("blue")}>
+      </button>
+      <h3>{num}</h3> */}
+      <h1>
+        My favorite color is{" "}
+        <span style={{ backgroundColor: color }}>{color}!</span>
+      </h1>
+      <button
+        style={{ color: color }}
+        type="button"
+        onClick={() => setColor("blue")}
+      >
         Blue
       </button>
-      <button type="button" onClick={() => setColor("red")}>
+      <button
+        style={{ color: color }}
+        type="button"
+        onClick={() => setColor("red")}
+      >
         Red
       </button>
-      <button type="button" onClick={() => setColor("pink")}>
+      <button
+        style={{ color: color }}
+        type="button"
+        onClick={() => setColor("pink")}
+      >
         Pink
       </button>
-      <button type="button" onClick={() => setColor("green")}>
+      <button
+        style={{ color: color }}
+        type="button"
+        onClick={() => setColor("green")}
+      >
         Green
       </button>
+      <h3>{color}</h3>
     </div>
   );
 };

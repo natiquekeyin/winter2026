@@ -1,6 +1,6 @@
 In this temp folder, we will only create those components that are not directly part of our tasktracker application. 
 
-Rather we will discuss different topics and practice them inside this temp folder components...
+Rather we will discuss different topics and practice them inside this temp folder components... AND THEN WE CAN REMOVE THIS temp FOLDER AFTER COMPLETING THE PROJECT...
 
 State in React:
 
@@ -12,3 +12,7 @@ In React.js, state is a built-in feature that allows components to store, manage
 
 
 This component-specific memory is essential for building dynamic and interactive user interfaces because when the state changes, React automatically re-renders the component to reflect the new data. 
+
+
+React Icons:
+In react we have react-icons!

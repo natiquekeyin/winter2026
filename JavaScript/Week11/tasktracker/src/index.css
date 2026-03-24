@@ -37,3 +37,19 @@ header {
   justify-content: space-between;
   align-items: center;
 }
+
+.task {
+  background-color: #a7d1f4;
+  margin: 5px;
+  padding: 7px;
+  cursor: pointer;
+}
+
+.task h3 {
+  display: flex;
+  justify-content: space-between;
+}
+
+.task.reminder {
+  border-left: 8px solid green;
+}
