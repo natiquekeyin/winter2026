@@ -16,3 +16,34 @@ This component-specific memory is essential for building dynamic and interactive
 
 React Icons:
 In react we have react-icons!
+
+... means spread out the object...
+
+let obj={x:5,y:10}
+
+... means x=5 y=10....
+
+...obj,x:50;
+
+&& operator in React:
+
+{showAddTask && <AddTask onAdd={addTask} />}
+
+IF showAddTask is true THEN run this part of code..otherwise DONT RUN OTHE PART OF THE CODE....
+
+
+Hooks: 
+1) useState() which is used to define a state variable...
+2) useEffect()
+
+    useEffect(()=>{}); It will run with every rendering or re-rending of the component...
+
+    useEffect(()=>{},[]); It will only run ONCE with first time loading of the component...
+
+    useEffect(()=>{},[VAR]); this will run first at the beginning and then whenever thereis a change in VAR..
+
+    We want to setup a server that actually provide the data (tasks)...
+
+    json-server NPM utility to setup a json server for testing UI or react application...
+
+    CRUD operations—Create, Read, Update, Delete—on resources, often leveraging JSON for data exchange. Common HTTP methods include GET (read), POST (create), PUT/PATCH (update), and DELETE

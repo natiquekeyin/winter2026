@@ -1,0 +1,21 @@
+Events in React!
+
+// The DeleteTask function journey: A short story
+// Funtion is created in APP
+//  onDelete={deleteTask} creates a prop called OnDelete which is the function DeleteTask
+// in Tasks it recieves the prop OnDelete--- const Tasks = ({tasks, onDelete}) => {
+// in Tasks it passes OnDelete down again to Task--  <Task task={task} key={task.id} onDelete={onDelete}/> -> -const Task=({onDelete})
+// In Task when the X icon is clicked it calls onDelete---<FaTimes onClick={onDelete} ... />
+// Moral of the story: The function has to live where the state is and be passed down to use "lifting up the state"
+
+Why in App.jsx? We define function and make it travel to the Task...
+
+we want to keep most of the functions/data (tasks=[]) as global, and would like them to travel from App to respective components..
+
+Exception to above is Context API, this will enable us to define all state variables/functions inside the RESPECTIVE COMPONENT..
+
+SPA (Single Page Applications) -> 
+
+Speed!
+
+React, Angular , Vue ..

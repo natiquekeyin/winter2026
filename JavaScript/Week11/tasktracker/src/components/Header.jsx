@@ -1,6 +1,6 @@
 import Button from "./Button";
 import { FaBookReader } from "react-icons/fa";
-const Header = ({ title, onClick }) => {
+const Header = ({ title, onAdd, showAdd }) => {
   return (
     <header>
       <h1>
@@ -8,7 +8,11 @@ const Header = ({ title, onClick }) => {
         {title}
       </h1>
 
-      <Button color="green" text="Add Task" onClick={onClick} />
+      <Button
+        color={showAdd ? "red" : "green"}
+        text={showAdd ? "Close" : "Add Task"}
+        onAdd={onAdd}
+      />
     </header>
   );
 };
