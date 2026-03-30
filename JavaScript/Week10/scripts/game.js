@@ -30,8 +30,8 @@ window.addEventListener("DOMContentLoaded", function () {
       box2CountValue++;
       // for react, the above changes should AUTOMATICALLY UPDATE ALL THE UI WITH UDPATED VALUES..
       //  CONCEPT OF "state"
-      box1Count.innerText = box1CountValue;
-      box2Count.innerText = box2CountValue;
+      // box1Count.innerText = box1CountValue;
+      // box2Count.innerText = box2CountValue;
     }
   });
 });
