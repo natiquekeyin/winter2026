@@ -1,10 +1,22 @@
 {
   "tasks": [
     {
-      "text": "sdfdsfd",
-      "day": "sdfdsfdsfds",
+      "text": "Meeting with Director",
+      "day": "April 23,2026 at 5:00PM",
       "reminder": true,
-      "id": "CgF2prTBd-0"
+      "id": "K4tXvISI1Rg"
+    },
+    {
+      "text": "Shopping ",
+      "day": "April 2, 2026",
+      "reminder": true,
+      "id": "Q2-gemX4TVc"
+    },
+    {
+      "text": "GYM",
+      "day": "April 3,2026",
+      "reminder": false,
+      "id": "H9xxJWz3idM"
     }
   ],
   "$schema": "./node_modules/json-server/schema.json"

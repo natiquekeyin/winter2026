@@ -86,3 +86,11 @@ header {
 .form-control.check input {
   flex: 2;
 }
+
+.about {
+  text-align: center;
+}
+
+footer {
+  text-align: center;
+}
