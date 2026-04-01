@@ -94,3 +94,14 @@ header {
 footer {
   text-align: center;
 }
+
+.link {
+  text-decoration: none;
+  color: black;
+  font-weight: 500;
+}
+
+.link:hover {
+  color: red;
+  text-decoration: underline;
+}

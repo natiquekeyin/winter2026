@@ -11,6 +11,8 @@ import Temp1 from "./components/temp/Temp1";
 
 import Temp2 from "./components/temp/Temp2";
 
+import TaskDetails from "./components/TaskDetails";
+
 function App() {
   let [tasks, setTasks] = useState([]);
 
@@ -131,6 +133,8 @@ function App() {
           <Route path="/temp1" element={<Temp1 />} />
 
           <Route path="/temp2" element={<Temp2 />} />
+
+          <Route path="/task/:id" element={<TaskDetails />} />
         </Routes>
 
         <Footer />
