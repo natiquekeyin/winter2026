@@ -5,6 +5,6 @@ import "@testing-library/jest-dom/vitest";
 
 test("Greet component has hello or world text", () => {
   render(<Greet />);
-  const heading = screen.getByText(/world/i);
+  const heading = screen.getByText("hello world", { exact: false });
   expect(heading).toBeInTheDocument();
 });
